@@ -1,14 +1,20 @@
 # AetherLog
 
-AetherLog is a synergistic framework for log-based root cause analysis (RCA), combining the semantic reasoning power of large language models (LLMs) with the structure and domain specificity of knowledge graphs (KGs). Designed for modern large-scale distributed systems, it provides an accurate, explainable, and efficient way to identify system faults.
+AetherLog is a unified framework for log-based root cause analysis (RCA), combining the semantic reasoning power of large language models (LLMs) with the structure and domain specificity of knowledge graphs (KGs). It is designed for modern large-scale distributed systems and provides an accurate, explainable, and reproducible approach to identify system faults.
 
 ## 🔍 Key Features
 
-- **LLM + KG Integration**: Combine context-aware log understanding with structured fault knowledge.
-- **Semantic Entity Aggregation**: Normalize redundant or similar fault indicators via embedding-based clustering.
-- **Context-Aware Retrieval**: Dynamically recall relevant fault entities from the KG based on summarized logs.
-- **Prompt-Driven RCA**: Construct powerful prompts to guide LLMs in accurate fault reasoning.
-- **Modular & Extensible**: Fully script-based pipeline with CLI tools for preprocessing, KG construction, RCA, and evaluation.
+LLM + KG Integration: Context-aware log understanding guided by structured fault knowledge.
+
+Semantic Entity Aggregation: Normalize redundant or semantically equivalent fault indicators using embedding-based clustering (DBSCAN).
+
+Context-Aware Retrieval: Dynamically recall relevant fault entities from the KG based on summarized logs.
+
+Prompt-Driven RCA: Supports Zero-shot, Few-shot, and CoT-style prompts with customizable templates.
+
+Modular & Extensible: Full script-based pipeline for preprocessing, KG construction, entity recall, prompt generation, RCA inference, and evaluation.
+
+Reproducibility: Includes KG schema, prompt templates, and clustering scripts to ensure full end-to-end replication.
 
 ## 📦 Installation
 
