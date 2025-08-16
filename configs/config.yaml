@@ -75,3 +75,9 @@ visualization:
   enable: true
   output_dir: outputs/figures/
   format: pdf
+
+incremental_update:
+  enabled: true
+  update_script: "scripts/kg_update.py"
+  max_new_cases: 100
+  
